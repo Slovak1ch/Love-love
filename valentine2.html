@@ -16,9 +16,9 @@
             overflow: hidden;
         }
         .header-text {
-            font-size: 48px;
+            font-size: 50px;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
             margin-top: 20px;
         }
         .container {
@@ -27,20 +27,29 @@
             z-index: 2;
         }
         .big-heart {
-            font-size: 120px;
+            font-size: 140px;
+        }
+        .love-text {
+            font-size: 55px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            margin-top: -20px;
         }
         button {
             background-color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 15px 30px;
             color: #ff4d6d;
-            font-size: 18px;
+            font-size: 20px;
             cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-weight: bold;
+            transition: 0.3s;
         }
         button:hover {
             background-color: #ffccd5;
+            transform: scale(1.1);
         }
         .hearts {
             position: fixed;
@@ -68,7 +77,7 @@
     <div class="header-text">Ты моя единственная любовь! 💖</div>
     <div class="container">
         <p class="big-heart">❤️</p>
-        <p>Ты мой ангелочек! 💕</p>
+        <p class="love-text">Ты мой ангелочек! 💕</p>
         <button onclick="window.location.href='index.html'">Тьмок Тьмок</button>
     </div>
     <div class="hearts" id="hearts"></div>
@@ -86,6 +95,5 @@
     </script>
 </body>
 </html>
-
 
 
