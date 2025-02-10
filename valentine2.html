@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя Валентинка</title>
-    <link rel="icon" type="image/png" href="favicon.ico"> <!-- Иконка страницы -->
+    <link rel="icon" type="image/png" href="favicon.ico"> 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-            color: white;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
             overflow: hidden;
         }
         .header-text {
             font-size: 50px;
             font-weight: bold;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-            margin-top: 20px;
-        }
-        .container {
-            padding: 20px;
-            position: relative;
-            z-index: 2;
         }
         .big-heart {
             font-size: 140px;
+            margin-top: -10px;
         }
         .love-text {
             font-size: 55px;
             font-weight: bold;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-            margin-top: -20px;
+            margin-top: -10px;
         }
         button {
             background-color: white;
@@ -43,9 +46,10 @@
             font-size: 20px;
             cursor: pointer;
             border-radius: 10px;
-            margin-top: 30px;
+            margin-top: 20px;
             font-weight: bold;
             transition: 0.3s;
+            outline: none;
         }
         button:hover {
             background-color: #ffccd5;
@@ -75,12 +79,12 @@
 </head>
 <body>
     <div class="header-text">Ты моя единственная любовь! 💖</div>
-    <div class="container">
-        <p class="big-heart">❤️</p>
-        <p class="love-text">Ты мой ангелочек! 💕</p>
-        <button onclick="window.location.href='index.html'">Тьмок Тьмок</button>
-    </div>
+    <p class="big-heart">❤️</p>
+    <p class="love-text">Ты мой ангелочек! 💕</p>
+    <button onclick="window.location.href='index.html'">Тьмок Тьмок</button>
+
     <div class="hearts" id="hearts"></div>
+    
     <script>
         function createHeart() {
             const heart = document.createElement("div");
@@ -95,5 +99,6 @@
     </script>
 </body>
 </html>
+
 
 
